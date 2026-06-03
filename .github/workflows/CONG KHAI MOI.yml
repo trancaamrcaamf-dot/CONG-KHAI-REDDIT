@@ -57,8 +57,8 @@ jobs:
       SUB_POS_X: "640"
       SUB_POS_Y: "600"
       
-      WHISPER_LANGUAGE: "vi"
-      WHISPER_LANG: "vi"
+      WHISPER_LANGUAGE: "en"
+      WHISPER_LANG: "en"
 
       BLACK_KEY_SIMILARITY: "0.32"
       BLACK_KEY_BLEND: "0.12"
@@ -92,7 +92,7 @@ jobs:
       - name: Resolve parameters (support schedule without inputs)
         id: params
         run: |
-          repo="${{ inputs.private_repo }}"; [ -z "$repo" ] && repo="colfleshjadein2404997-oss/tesst-mc"; echo "repo=$repo" >> "$GITHUB_OUTPUT"
+          repo="${{ inputs.private_repo }}"; [ -z "$repo" ] && repo="trancaamrcaamf-dot/rieng-tu-redit"; echo "repo=$repo" >> "$GITHUB_OUTPUT"
           ref="${{ inputs.private_ref }}";   [ -z "$ref" ] && ref="main";                   echo "ref=$ref" >> "$GITHUB_OUTPUT"
           wd="${{ inputs.workdir }}";        [ -z "$wd" ]  && wd=".";                       echo "workdir=$wd" >> "$GITHUB_OUTPUT"
           privacy="${{ inputs.youtube_privacy }}"; [ -z "$privacy" ] && privacy="public";   echo "privacy=$privacy" >> "$GITHUB_OUTPUT"
